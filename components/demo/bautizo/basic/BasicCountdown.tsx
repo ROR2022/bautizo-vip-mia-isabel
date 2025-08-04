@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { basicDemoData } from './data/basic-demo-data'
-import { MiaIsabelBautizoData } from '../vip/data/mia-isabel-data'
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
 interface BasicCountdownProps {
@@ -10,7 +10,7 @@ interface BasicCountdownProps {
   theme?: MiaIsabelTheme;
 }
 
-export function BasicCountdown({ data = basicDemoData, theme }: BasicCountdownProps) {
+export function BasicCountdown({ data = miaIsabelBautizoData, theme }: BasicCountdownProps) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -125,10 +125,10 @@ export function BasicCountdown({ data = basicDemoData, theme }: BasicCountdownPr
             Un día de gracia y bendición se acerca
           </h3>
           <p className="text-lg md:text-xl opacity-90 mb-4">
-            {basicDemoData.event.date.full} a las {basicDemoData.event.ceremony.time}
+            {data.event.date.full} a las {data.event.ceremony.time}
           </p>
           <p className="text-base opacity-80">
-            En {basicDemoData.event.ceremony.venue}
+            En {data.event.ceremony.venue}
           </p>
         </div>
 
