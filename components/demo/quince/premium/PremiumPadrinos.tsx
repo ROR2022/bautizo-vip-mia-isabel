@@ -1,14 +1,10 @@
 "use client"
 
-import { useRef } from "react"
-import { useInView } from "framer-motion"
 import { Heart, Users } from "lucide-react"
 import { useIsClient } from "@/hooks/useIsClient"
 import { premiumDemoData } from "./data/premium-demo-data"
 
 export function PremiumPadrinos() {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
   const isClient = useIsClient()
 
   // Debug log removed for production build

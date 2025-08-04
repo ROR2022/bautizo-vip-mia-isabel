@@ -25,7 +25,7 @@ export const miaIsabelBautizoData = {
   // Información del Hero principal
   hero: {
     name: "Mia Isabel",
-    subtitle: "Recibe el Sacramento del Bautismo",
+    subtitle: "Recibe el Sacramento del Bautismo y fiesta de primer año",
     backgroundImage: "/images/custom/mia1.jpeg", // ✨ IMAGEN REAL DE MIA ISABEL
     theme: "Mia Isabel - Estilo Mexicano Tradicional"
   },
@@ -46,9 +46,9 @@ export const miaIsabelBautizoData = {
       godmother: "[MADRINA_A_DEFINIR]" // Pendiente de definir
     },
     date: {
-      full: "[FECHA_COMPLETA_A_DEFINIR]", // Ej: "Domingo 15 de Diciembre 2024"
-      day: "[DIA_A_DEFINIR]", // Ej: "Domingo"
-      date: "[FECHA_A_DEFINIR]" // Ej: "15 de Diciembre 2024"
+      full: "Sábado 6 de Septiembre 2025", // Ej: "Domingo 15 de Diciembre 2024"
+      day: "Sábado", // Ej: "Domingo"
+      date: "6 de Septiembre 2025" // Ej: "15 de Diciembre 2024"
     },
     ceremony: {
       time: "[HORA_CEREMONIA_A_DEFINIR]", // Ej: "12:00 hrs."
