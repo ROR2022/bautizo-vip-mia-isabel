@@ -34,7 +34,9 @@ export default function MiaIsabelBautizoPage() {
         <BasicEventDetails data={miaIsabelBautizoData} theme={miaIsabelTheme} />
 
         {/* ℹ️ INFORMACIÓN PARA INVITADOS - CARACTERÍSTICA VIP EXCLUSIVA */}
+        {/*
         <VipGuestInfo data={miaIsabelBautizoData} theme={miaIsabelTheme} />
+        */}
 
         {/* 📅 ITINERARIO COMPLETO - Día especial de Mia Isabel - VIP EXCLUSIVO */}
         <VipItinerary data={miaIsabelBautizoData} theme={miaIsabelTheme} />

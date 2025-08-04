@@ -3,7 +3,7 @@ export const vipDemoData = {
   // Información del Hero principal
   hero: {
     name: "Sofia Valentina",
-    subtitle: "Recibe el Sacramento del Bautismo",
+    subtitle: "Recibe el Sacramento del Bautismo y fiesta de primer año",
     backgroundImage: "/images/bautizo/bautizo1.jpeg",
     theme: "Cielito Lindo"
   },

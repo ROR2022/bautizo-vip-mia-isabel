@@ -5,7 +5,7 @@ import { ChevronDown, Play, Pause } from "lucide-react"
 import { motion } from "framer-motion"
 import { useMusicContext } from "@/context/music-context"
 import { vipDemoData } from "./data/vip-demo-data"
-import { MiaIsabelBautizoData } from "./data/mia-isabel-data"
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from "./data/mia-isabel-data"
 import { MiaIsabelTheme } from "@/lib/themes/mia-isabel-theme"
 
 interface VipHeroProps {
@@ -13,7 +13,7 @@ interface VipHeroProps {
   theme?: MiaIsabelTheme;
 }
 
-export function VipHero({ data = vipDemoData, theme }: VipHeroProps) {
+export function VipHero({ data = miaIsabelBautizoData, theme }: VipHeroProps) {
   const [isLoaded, setIsLoaded] = useState(false)
   const { isPlaying, togglePlay, isClient } = useMusicContext()
 
@@ -138,20 +138,9 @@ export function VipHero({ data = vipDemoData, theme }: VipHeroProps) {
             className="mt-6 space-y-1"
           >
             {/* Familia adaptada para madre soltera */}
-            {data.event.parents.father ? (
-              <>
-                <p className="text-sm md:text-base text-pink-200 opacity-90">
-                  Hija de {data.event.parents.father}
-                </p>
-                <p className="text-sm md:text-base text-pink-200 opacity-90">
-                  y {data.event.parents.mother}
-                </p>
-              </>
-            ) : (
-              <p className="text-sm md:text-base text-pink-200 opacity-90">
-                Hija querida de {data.event.parents.mother}
-              </p>
-            )}
+            <p className="text-sm md:text-base text-pink-200 opacity-90">
+              Hija querida de {data.event.parents.mother}
+            </p>
             <div className="mt-3 pt-3 border-t border-sky-300/30">
               <p className="text-xs md:text-sm text-sky-300 opacity-80">
                 Padrinos: {data.event.godparents.godfather} y {data.event.godparents.godmother}

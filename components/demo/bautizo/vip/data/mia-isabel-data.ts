@@ -34,16 +34,16 @@ export const miaIsabelBautizoData = {
   event: {
     celebrant: {
       name: "MIA ISABEL JUAREZ TORRES",
-      birthDate: "[FECHA_NACIMIENTO_A_DEFINIR]", // Pendiente de definir
-      age: "[EDAD_A_DEFINIR]" // Pendiente de definir
+      birthDate: "3 de Septiembre 2024", 
+      age: "1 Año"
     },
     parents: {
       mother: "REYNA MONSERRAT JUAREZ TORRES",
       // padre omitido intencionalmente - familia monoparental
     },
     godparents: {
-      godfather: "[PADRINO_A_DEFINIR]", // Pendiente de definir
-      godmother: "[MADRINA_A_DEFINIR]" // Pendiente de definir
+      godfather: "Jesús Alejandro Juárez Torres", 
+      godmother: "Dalia Isabel Elizalde Camacho" 
     },
     date: {
       full: "Sábado 6 de Septiembre 2025", // Ej: "Domingo 15 de Diciembre 2024"
@@ -51,9 +51,9 @@ export const miaIsabelBautizoData = {
       date: "6 de Septiembre 2025" // Ej: "15 de Diciembre 2024"
     },
     ceremony: {
-      time: "[HORA_CEREMONIA_A_DEFINIR]", // Ej: "12:00 hrs."
-      venue: "[IGLESIA_A_DEFINIR]", // Ej: "Parroquia San José"
-      address: "[DIRECCION_IGLESIA_A_DEFINIR]", // Ej: "Calle Morelos 456, Centro"
+      time: "13:00 hrs.", // Ej: "12:00 hrs."
+      venue: "Santuario del Señor de las Misericordias", // Ej: "Parroquia San José"
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX", // Ej: "Calle Morelos 456, Centro"
       type: "Sacramento del Bautismo"
     },
     celebration: {
@@ -68,7 +68,7 @@ export const miaIsabelBautizoData = {
 
   // Cuenta regresiva personalizada
   countdown: {
-    targetDate: "[FECHA_TARGET_A_DEFINIR]", // Formato: "December 15, 2024 12:00:00"
+    targetDate: "September 6, 2025 12:00:00", // Formato: "December 15, 2024 12:00:00"
     backgroundImage: "/images/custom/mia3.jpeg" // ✨ IMAGEN REAL DE MIA ISABEL para countdown
   },
 
@@ -99,8 +99,8 @@ export const miaIsabelBautizoData = {
       // Padre omitido intencionalmente para familia monoparental
     },
     godparents: {
-      godfather: "[PADRINO_A_DEFINIR]", 
-      godmother: "[MADRINA_A_DEFINIR]"
+      godfather: "Jesús Alejandro Juárez Torres", 
+      godmother: "Dalia Isabel Elizalde Camacho"
     },
     decorativeMessage: "Acompáñanos en este momento sagrado y especial para Mia Isabel",
     mexicanElements: {
@@ -433,12 +433,12 @@ export const miaIsabelBautizoData = {
     },
     { 
       role: "Padrinos de Bautismo", 
-      names: ["[PADRINO_A_DEFINIR]", "[MADRINA_A_DEFINIR]"],
+      names: ["Jesús Alejandro Juárez Torres", "Dalia Isabel Elizalde Camacho"],
       description: "Quienes acompañarán a Mia Isabel en su camino espiritual"
     },
     { 
       role: "Abuelos Maternos", 
-      names: ["[ABUELO_MATERNO]", "[ABUELA_MATERNA]"],
+      names: ["Rosendo Juárez Diaz", "Reyna Beatriz Torres de la Fuente"],
       description: "Pilares de sabiduría y bendiciones familiares"
     },
     { 
