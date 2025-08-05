@@ -29,13 +29,13 @@ export const vipDemoData = {
       date: "15 de Septiembre 2024"
     },
     ceremony: {
-      time: "12:00 hrs.",
+      time: "12:30 hrs.",
       venue: "Parroquia San José",
       address: "Calle Morelos 456, Centro, 64000 Monterrey, N.L.",
       type: "Sacramento del Bautismo"
     },
     celebration: {
-      time: "14:00 hrs.",
+      time: "14:30 hrs.",
       venue: "Jardín Familiar Los Ángeles", 
       address: "Av. Constitución 789, San Pedro, 66220 Monterrey, N.L.",
       type: "Celebración Familiar"
@@ -128,73 +128,73 @@ export const vipDemoData = {
   // Itinerario completo del día del bautismo
   itinerary: [
     {
-      time: "10:00",
+      time: "12:00",
       activity: "Llegada de la familia", 
-      location: "Parroquia San José",
-      address: "Calle Morelos 456, Centro, 64000 Monterrey, N.L.",
+      location: "Santuario del Señor de las Misericordias",
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Preparativos y encuentro con el padre celebrante",
       icon: "⛪",
       type: "preparation"
     },
     {
-      time: "11:30",
+      time: "12:15",
       activity: "Llegada de padrinos e invitados",
-      location: "Parroquia San José", 
-      address: "Calle Morelos 456, Centro, 64000 Monterrey, N.L.",
+      location: "Santuario del Señor de las Misericordias", 
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Bienvenida y preparación para la ceremonia",
       icon: "👨‍👩‍👧‍👦",
       type: "preparation"
     },
     {
-      time: "12:00",
+      time: "12:30",
       activity: "Ceremonia de Bautismo",
-      location: "Parroquia San José",
-      address: "Calle Morelos 456, Centro, 64000 Monterrey, N.L.",
+      location: "Santuario del Señor de las Misericordias",
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Sacramento del Bautismo de Sofia Valentina",
       icon: "✨",
       type: "ceremony"
     },
     {
-      time: "12:45",
+      time: "13:30",
       activity: "Sesión de fotos familiares",
-      location: "Jardín de la Parroquia",
-      address: "Calle Morelos 456, Centro, 64000 Monterrey, N.L.",
+      location: "Santuario del Señor de las Misericordias",
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Fotos con la familia y padrinos",
       icon: "📸",
       type: "photos"
     },
     {
-      time: "14:00",
+      time: "14:30",
       activity: "Celebración familiar",
-      location: "Jardín Familiar Los Ángeles",
-      address: "Av. Constitución 789, San Pedro, 66220 Monterrey, N.L.",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Recepción y celebración con familia e invitados",
       icon: "🎉",
       type: "celebration"
     },
     {
-      time: "14:30",
+      time: "15:00",
       activity: "Tiempo de convivencia",
-      location: "Jardín Familiar Los Ángeles - Área Social",
-      address: "Av. Constitución 789, San Pedro, 66220 Monterrey, N.L.",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Convivencia familiar y bendiciones",
       icon: "👼",
       type: "celebration"
     },
     {
-      time: "15:00",
+      time: "15:30",
       activity: "Comida familiar",
-      location: "Jardín Familiar Los Ángeles - Comedor",
-      address: "Av. Constitución 789, San Pedro, 66220 Monterrey, N.L.",
-      description: "Almuerzo especial en honor a Sofia Valentina",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
+      description: "Comida y convivencia familiar en honor a Mia Isabel",
       icon: "🍽️",
       type: "celebration"
     },
     {
-      time: "16:30",
+      time: "16:00",
       activity: "Entrega de recuerdos",
-      location: "Jardín Familiar Los Ángeles - Sala Principal",
-      address: "Av. Constitución 789, San Pedro, 66220 Monterrey, N.L.",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Agradecimientos y entrega de detalles",
       icon: "🎁",
       type: "farewell"

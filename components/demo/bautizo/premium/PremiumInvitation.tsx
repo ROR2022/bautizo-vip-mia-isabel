@@ -2,7 +2,7 @@
 
 import { Heart, Users } from 'lucide-react'
 import { premiumDemoData } from './data/premium-demo-data'
-import { MiaIsabelBautizoData } from '../vip/data/mia-isabel-data'
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
 interface PremiumInvitationProps {
@@ -10,7 +10,7 @@ interface PremiumInvitationProps {
   theme?: MiaIsabelTheme;
 }
 
-export function PremiumInvitation({ data = premiumDemoData, theme }: PremiumInvitationProps) {
+export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: PremiumInvitationProps) {
   return (
     <section 
       className={`py-16 px-4 relative overflow-hidden`}
@@ -74,39 +74,22 @@ export function PremiumInvitation({ data = premiumDemoData, theme }: PremiumInvi
               <div className="flex items-center gap-3 mb-4">
                 <Users className={`w-6 h-6 ${theme ? 'text-pink-600' : 'text-sky-600'}`} />
                 <h5 className={`text-xl font-semibold ${theme ? 'text-pink-800' : 'text-sky-800'}`}>
-                  {data.invitation.parents.father ? 'Sus Padres' : 'Su Madre'}
+                  Su Madre
                 </h5>
               </div>
               <div className="space-y-3 text-gray-700">
                 {/* Adaptado para familia monoparental */}
-                {data.invitation.parents.father ? (
-                  <>
-                    <div className="flex items-center gap-2">
-                      <span className="text-blue-500">👨</span>
-                      <p className="font-medium">
-                        {data.invitation.parents.father}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-pink-500">👩</span>
-                      <p className="font-medium">
-                        {data.invitation.parents.mother}
-                      </p>
-                    </div>
-                  </>
-                ) : (
-                  <div className="text-center">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <span className="text-pink-500 text-2xl">💖</span>
-                      <p className="font-semibold text-lg">
-                        {data.invitation.parents.mother}
-                      </p>
-                    </div>
-                    <p className="text-sm text-gray-500 italic">
-                      Madre amorosa y dedicada
+                <div className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-pink-500 text-2xl">💖</span>
+                    <p className="font-semibold text-lg">
+                      {data.invitation.parents.mother}
                     </p>
                   </div>
-                )}
+                  <p className="text-sm text-gray-500 italic">
+                    Madre amorosa y dedicada
+                  </p>
+                </div>
               </div>
             </div>
 

@@ -51,15 +51,15 @@ export const miaIsabelBautizoData = {
       date: "6 de Septiembre 2025" // Ej: "15 de Diciembre 2024"
     },
     ceremony: {
-      time: "13:00 hrs.", // Ej: "12:00 hrs."
+      time: "12:30 hrs.", // Ej: "12:00 hrs."
       venue: "Santuario del Señor de las Misericordias", // Ej: "Parroquia San José"
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX", // Ej: "Calle Morelos 456, Centro"
       type: "Sacramento del Bautismo"
     },
     celebration: {
-      time: "[HORA_CELEBRACION_A_DEFINIR]", // Ej: "14:00 hrs."
-      venue: "[LUGAR_FIESTA_A_DEFINIR]", // Ej: "Jardín Familiar Los Ángeles"
-      address: "[DIRECCION_FIESTA_A_DEFINIR]", // Ej: "Av. Constitución 789"
+      time: "14:30 hrs.", // Ej: "14:00 hrs."
+      venue: "Salón Mario Alberto", // Ej: "Jardín Familiar Los Ángeles"
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX", // Ej: "Av. Constitución 789"
       type: "Celebración Familiar"
     },
     dressCode: "Formal Elegante - Colores Pasteles",
@@ -139,73 +139,73 @@ export const miaIsabelBautizoData = {
   // Itinerario personalizado del día del bautismo
   itinerary: [
     {
-      time: "[HORA_PREPARATIVOS]", // A definir
+      time: "12:00 hrs.", // A definir
       activity: "Llegada de la familia", 
-      location: "[IGLESIA_A_DEFINIR]",
-      address: "[DIRECCION_IGLESIA_A_DEFINIR]",
+      location: "Santuario del Señor de las Misericordias",
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Preparativos y encuentro con el padre celebrante para Mia Isabel",
       icon: "⛪",
       type: "preparation"
     },
     {
-      time: "[HORA_LLEGADA_INVITADOS]", // A definir
+      time: "12:15 hrs.", // A definir
       activity: "Llegada de padrinos e invitados",
-      location: "[IGLESIA_A_DEFINIR]", 
-      address: "[DIRECCION_IGLESIA_A_DEFINIR]",
+      location: "Santuario del Señor de las Misericordias", 
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Bienvenida y preparación para la ceremonia de Mia Isabel",
       icon: "👨‍👩‍👧‍👦",
       type: "preparation"
     },
     {
-      time: "[HORA_CEREMONIA]", // A definir
+      time: "12:30 hrs.", // A definir
       activity: "Ceremonia de Bautismo",
-      location: "[IGLESIA_A_DEFINIR]",
-      address: "[DIRECCION_IGLESIA_A_DEFINIR]",
+      location: "Santuario del Señor de las Misericordias",
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Sacramento del Bautismo de Mia Isabel Juarez Torres",
       icon: "✨",
       type: "ceremony"
     },
     {
-      time: "[HORA_FOTOS]", // A definir
+      time: "13:30 hrs.", // A definir
       activity: "Sesión de fotos familiares",
-      location: "Jardín de la Iglesia",
-      address: "[DIRECCION_IGLESIA_A_DEFINIR]",
+      location: "Santuario del Señor de las Misericordias",
+      address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Fotos con Reyna Monserrat, padrinos y familia de Mia Isabel",
       icon: "📸",
       type: "photos"
     },
     {
-      time: "[HORA_CELEBRACION]", // A definir
+      time: "14:30 hrs.", // A definir
       activity: "Celebración familiar",
-      location: "[LUGAR_FIESTA_A_DEFINIR]",
-      address: "[DIRECCION_FIESTA_A_DEFINIR]",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Recepción y celebración en honor a Mia Isabel",
       icon: "🎉",
       type: "celebration"
     },
     {
-      time: "[HORA_CONVIVENCIA]", // A definir
+      time: "15:00 hrs.", // A definir
       activity: "Tiempo de convivencia",
-      location: "[LUGAR_FIESTA_A_DEFINIR] - Área Social",
-      address: "[DIRECCION_FIESTA_A_DEFINIR]",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Convivencia familiar y bendiciones para Mia Isabel",
       icon: "👼",
       type: "celebration"
     },
     {
-      time: "[HORA_COMIDA]", // A definir
+      time: "15:30 hrs.", // A definir
       activity: "Comida familiar",
-      location: "[LUGAR_FIESTA_A_DEFINIR] - Comedor",
-      address: "[DIRECCION_FIESTA_A_DEFINIR]",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Almuerzo especial en honor a Mia Isabel",
       icon: "🍽️",
       type: "celebration"
     },
     {
-      time: "[HORA_RECUERDOS]", // A definir
+      time: "16:00 hrs.", // A definir
       activity: "Entrega de recuerdos",
-      location: "[LUGAR_FIESTA_A_DEFINIR] - Sala Principal",
-      address: "[DIRECCION_FIESTA_A_DEFINIR]",
+      location: "Salón Mario Alberto",
+      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Agradecimientos de Reyna Monserrat y entrega de detalles",
       icon: "🎁",
       type: "farewell"
