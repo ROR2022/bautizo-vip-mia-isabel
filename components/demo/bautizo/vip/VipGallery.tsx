@@ -4,7 +4,7 @@ import { useState, useCallback, useEffect } from 'react'
 import { X, ChevronLeft, ChevronRight, Heart, Sparkles } from 'lucide-react'
 import Image from 'next/image'
 import { vipDemoData } from './data/vip-demo-data'
-import { MiaIsabelBautizoData } from './data/mia-isabel-data'
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from './data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
 interface VipGalleryProps {
@@ -12,7 +12,7 @@ interface VipGalleryProps {
   theme?: MiaIsabelTheme;
 }
 
-export function VipGallery({ data = vipDemoData, theme: _theme }: VipGalleryProps) { // eslint-disable-line @typescript-eslint/no-unused-vars
+export function VipGallery({ data = miaIsabelBautizoData, theme: _theme }: VipGalleryProps) { // eslint-disable-line @typescript-eslint/no-unused-vars
   const [selectedCategory, setSelectedCategory] = useState(data.gallery.categories[0].name)
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -89,7 +89,7 @@ export function VipGallery({ data = vipDemoData, theme: _theme }: VipGalleryProp
           
           <p className="text-lg text-sky-700 max-w-3xl mx-auto leading-relaxed">
             Cada fotografía captura un momento especial en la preparación y celebración 
-            del bautismo de Sofia Valentina. Momentos llenos de amor, bendiciones y alegría 
+            del bautismo de {data.hero.name}. Momentos llenos de amor, bendiciones y alegría 
             que quedarán por siempre en nuestros corazones.
           </p>
         </div>
@@ -266,7 +266,7 @@ export function VipGallery({ data = vipDemoData, theme: _theme }: VipGalleryProp
             <div className="mt-6 p-4 bg-white/50 rounded-xl">
               <p className="text-sm text-sky-700">
                 <strong>💙 Con amor:</strong> Cada imagen en esta galería representa un momento 
-                especial en la celebración del bautismo de Sofia Valentina. Gracias por ser 
+                especial en la celebración del bautismo de {data.hero.name}. Gracias por ser 
                 parte de estos recuerdos que atesoraremos para siempre.
               </p>
             </div>

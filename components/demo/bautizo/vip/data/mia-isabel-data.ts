@@ -393,7 +393,7 @@ export const miaIsabelBautizoData = {
         color: "from-pink-50 to-rose-50",
         images: [
           {
-            src: "/images/custom/tema1.png", // Usar imagen de referencia
+            src: "/images/bautizo/bautizo3.jpeg", // Usar imagen de referencia
             alt: "Diseño especial para Mia Isabel",
             caption: "El diseño mexicano tradicional elegido con amor"
           },
@@ -410,7 +410,7 @@ export const miaIsabelBautizoData = {
         color: "from-amber-50 to-yellow-50",
         images: [
           {
-            src: "/images/bautizo/bautizo3.jpeg",
+            src: "/images/bautizo/bautizo2.jpeg",
             alt: "Reyna Monserrat y Mia Isabel",
             caption: "Madre e hija, un amor infinito"
           },
