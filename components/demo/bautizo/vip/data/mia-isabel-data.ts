@@ -57,7 +57,7 @@ export const miaIsabelBautizoData = {
       type: "Sacramento del Bautismo"
     },
     celebration: {
-      time: "14:30 hrs.", // Ej: "14:00 hrs."
+      time: "14:31 hrs.", // Ej: "14:00 hrs."
       venue: "Salón Mario Alberto", // Ej: "Jardín Familiar Los Ángeles"
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX", // Ej: "Av. Constitución 789"
       type: "Celebración Familiar"
