@@ -57,7 +57,7 @@ export const miaIsabelBautizoData = {
       type: "Sacramento del Bautismo"
     },
     celebration: {
-      time: "14:31 hrs.", // Ej: "14:00 hrs."
+      time: "14:30 hrs.", // Ej: "14:00 hrs."
       venue: "Salón Mario Alberto", // Ej: "Jardín Familiar Los Ángeles"
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX", // Ej: "Av. Constitución 789"
       type: "Celebración Familiar"
@@ -136,11 +136,22 @@ export const miaIsabelBautizoData = {
     }
   ],
   
+
+  /**
+   * En la parte del itinerario será 
+12:30 llegada de la familia e invitados  
+12:45: llegada de los padrinos 
+13:00 ceremonia de bautismo 
+14:00 sesión de fotos familiares
+14:30 recepción 
+15:00 comienzo de la fiesta
+   */
+
   // Itinerario personalizado del día del bautismo
   itinerary: [
     {
-      time: "12:00 hrs.", // A definir
-      activity: "Llegada de la familia", 
+      time: "12:30 hrs.", // A definir
+      activity: "Llegada de la familia e invitados", 
       location: "Santuario del Señor de las Misericordias",
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Preparativos y encuentro con el padre celebrante para Mia Isabel",
@@ -148,8 +159,8 @@ export const miaIsabelBautizoData = {
       type: "preparation"
     },
     {
-      time: "12:15 hrs.", // A definir
-      activity: "Llegada de padrinos e invitados",
+      time: "12:45 hrs.", // A definir
+      activity: "Llegada de padrinos",
       location: "Santuario del Señor de las Misericordias", 
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Bienvenida y preparación para la ceremonia de Mia Isabel",
@@ -157,7 +168,7 @@ export const miaIsabelBautizoData = {
       type: "preparation"
     },
     {
-      time: "12:30 hrs.", // A definir
+      time: "13:00 hrs.", 
       activity: "Ceremonia de Bautismo",
       location: "Santuario del Señor de las Misericordias",
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
@@ -166,7 +177,7 @@ export const miaIsabelBautizoData = {
       type: "ceremony"
     },
     {
-      time: "13:30 hrs.", // A definir
+      time: "14:00 hrs.", 
       activity: "Sesión de fotos familiares",
       location: "Santuario del Señor de las Misericordias",
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
@@ -175,8 +186,8 @@ export const miaIsabelBautizoData = {
       type: "photos"
     },
     {
-      time: "14:30 hrs.", // A definir
-      activity: "Celebración familiar",
+      time: "14:30 hrs.", 
+      activity: "Recepción",
       location: "Salón Mario Alberto",
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Recepción y celebración en honor a Mia Isabel",
@@ -184,7 +195,7 @@ export const miaIsabelBautizoData = {
       type: "celebration"
     },
     {
-      time: "15:00 hrs.", // A definir
+      time: "15:00 hrs.", 
       activity: "Tiempo de convivencia",
       location: "Salón Mario Alberto",
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
@@ -193,7 +204,7 @@ export const miaIsabelBautizoData = {
       type: "celebration"
     },
     {
-      time: "15:30 hrs.", // A definir
+      time: "15:30 hrs.", 
       activity: "Comida familiar",
       location: "Salón Mario Alberto",
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
