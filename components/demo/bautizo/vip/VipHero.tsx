@@ -82,7 +82,7 @@ export function VipHero({ data = miaIsabelBautizoData, theme }: VipHeroProps) {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8, duration: 1.2 }}
-            className="font-script text-6xl md:text-8xl text-white mb-6 celestial-text-gradient drop-shadow-2xl"
+            className="font-script text-6xl md:text-8xl text-pink-200 mb-6 celestial-text-gradient drop-shadow-2xl"
           >
             {data.hero.name}
           </motion.h1>
