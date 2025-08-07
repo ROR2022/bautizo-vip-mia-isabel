@@ -2,8 +2,7 @@
 
 import { useState } from 'react'
 import { MapPin, Clock, Heart, Sparkles } from 'lucide-react'
-import { vipDemoData } from './data/vip-demo-data'
-import { MiaIsabelBautizoData } from './data/mia-isabel-data'
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from './data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
 interface VipItineraryProps {
@@ -11,7 +10,7 @@ interface VipItineraryProps {
   theme?: MiaIsabelTheme;
 }
 
-export function VipItinerary({ data: _data = vipDemoData, theme: _theme }: VipItineraryProps) { // eslint-disable-line @typescript-eslint/no-unused-vars
+export function VipItinerary({ data: _data = miaIsabelBautizoData, theme: _theme }: VipItineraryProps) { // eslint-disable-line @typescript-eslint/no-unused-vars
   const [selectedEvent, setSelectedEvent] = useState<number | null>(null)
 
   const getTypeColor = (type: string) => {
@@ -84,7 +83,7 @@ export function VipItinerary({ data: _data = vipDemoData, theme: _theme }: VipIt
 
           {/* Eventos del itinerario */}
           <div className="space-y-12">
-            {vipDemoData.itinerary.map((event, index) => (
+            {_data.itinerary.map((event, index) => (
               <div 
                 key={index}
                 className={`relative flex items-center ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
