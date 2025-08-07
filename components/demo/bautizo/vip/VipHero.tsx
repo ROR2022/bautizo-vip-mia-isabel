@@ -73,9 +73,9 @@ export function VipHero({ data = miaIsabelBautizoData, theme }: VipHeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="text-sky-200 text-xl mb-2 font-light tracking-wider"
+            className="text-white text-xl md:text-2xl mb-2 font-medium tracking-wider drop-shadow-lg"
           >
-            {vipDemoData.hero.subtitle}
+            {data.hero.subtitle}
           </motion.p>
           
           <motion.h1
@@ -138,11 +138,11 @@ export function VipHero({ data = miaIsabelBautizoData, theme }: VipHeroProps) {
             className="mt-6 space-y-1"
           >
             {/* Familia adaptada para madre soltera */}
-            <p className="text-sm md:text-base text-pink-200 opacity-90">
+            <p className="text-2xl md:text-3xl text-pink-200 opacity-90">
               Hija querida de {data.event.parents.mother}
             </p>
             <div className="mt-3 pt-3 border-t border-sky-300/30">
-              <p className="text-xs md:text-sm text-sky-300 opacity-80">
+              <p className="text-white text-xl md:text-2xl mb-2 font-medium tracking-wider drop-shadow-lg">
                 Padrinos: {data.event.godparents.godfather} y {data.event.godparents.godmother}
               </p>
             </div>
