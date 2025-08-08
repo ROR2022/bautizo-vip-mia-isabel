@@ -1,16 +1,15 @@
 "use client"
 
 import { MapPin, Clock } from 'lucide-react'
-import { basicDemoData } from './data/basic-demo-data'
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
-import { MiaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 
 interface BasicEventDetailsProps {
   data?: MiaIsabelBautizoData;
   theme?: MiaIsabelTheme;
 }
 
-export function BasicEventDetails({ data = basicDemoData, theme }: BasicEventDetailsProps) {
+export function BasicEventDetails({ data = miaIsabelBautizoData, theme }: BasicEventDetailsProps) {
   return (
     <section 
       className="py-16 px-4 relative overflow-hidden"
@@ -55,14 +54,11 @@ export function BasicEventDetails({ data = basicDemoData, theme }: BasicEventDet
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-xl">{theme ? '💖' : '👨‍👩‍👧'}</span>
                 <h4 className={`font-semibold ${theme ? 'text-pink-800' : 'text-sky-800'}`}>
-                  {theme && !data.event.parents.father ? 'Su Madre Amorosa' : 'Sus Padres'}
+                  Su Madre Amorosa
                 </h4>
               </div>
-              {data.event.parents.father && (
-                <p className="text-gray-700">{data.event.parents.father}</p>
-              )}
               <p className="text-gray-700">{data.event.parents.mother}</p>
-              {theme && !data.event.parents.father && (
+              {theme && (
                 <p className="text-sm text-pink-600 italic mt-1">
                   Quien con amor infinito la guía en su camino de fe
                 </p>
@@ -213,7 +209,7 @@ export function BasicEventDetails({ data = basicDemoData, theme }: BasicEventDet
         <div className="mt-8 text-center">
           <div className="inline-block bg-gradient-to-r from-sky-100 to-pink-100 px-6 py-3 rounded-full border border-sky-200">
             <p className="text-sky-700 font-medium">
-              <span className="text-lg">☁️</span> Temática: {basicDemoData.event.theme} <span className="text-lg">☁️</span>
+              <span className="text-lg">☁️</span> Temática: {data.event.theme} <span className="text-lg">☁️</span>
             </p>
           </div>
         </div>

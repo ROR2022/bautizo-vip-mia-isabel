@@ -63,7 +63,7 @@ export const miaIsabelBautizoData = {
       type: "Celebración Familiar"
     },
     dressCode: "Formal Elegante - Colores Pasteles",
-    theme: "Mexicano Tradicional - Rosa Pálido y Blanco"
+    theme: "Mexicano Tradicional - Cielito Lindo"
   },
 
   // Cuenta regresiva personalizada
@@ -213,13 +213,13 @@ export const miaIsabelBautizoData = {
       type: "celebration"
     },
     {
-      time: "16:00 hrs.", // A definir
-      activity: "Entrega de recuerdos",
+      time: "16:00 hrs.", 
+      activity: "Actividades Sorpresa",
       location: "Salón Mario Alberto",
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
-      description: "Agradecimientos de Reyna Monserrat y entrega de detalles",
-      icon: "🎁",
-      type: "farewell"
+      description: "Actividades sorprendentes para Mia Isabel",
+      icon: "🎉",
+      type: "celebration"
     }
   ],
   

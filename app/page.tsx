@@ -45,7 +45,7 @@ export default function MiaIsabelBautizoPage() {
         <VipFamilyRoles data={miaIsabelBautizoData} theme={miaIsabelTheme} />
 
         {/* 🎵 PLAYLIST MEXICANA - Cielito Lindo y más - VIP ENHANCED */}
-        <VipPlaylist data={miaIsabelBautizoData} theme={miaIsabelTheme} />
+        {/*<VipPlaylist data={miaIsabelBautizoData} theme={miaIsabelTheme} />*/}
 
         {/* 📸 GALERÍA DE MOMENTOS - Recuerdos de Mia Isabel - VIP ENHANCED */}
         <VipGallery data={miaIsabelBautizoData} theme={miaIsabelTheme} />
