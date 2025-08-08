@@ -495,12 +495,6 @@ export const miaIsabelBautizoData = {
         title: "Mesa de Regalos Infantil",
         description: "[TIENDA_A_DEFINIR]", // A definir
         details: "Evento: Bautizo Mia Isabel Juarez Torres\nCódigo: [CODIGO_EVENTO]"
-      },
-      {
-        icon: "🙏",
-        title: "Donativo Benéfico",
-        description: "[FUNDACION_A_DEFINIR]", // A definir
-        details: "En honor a Mia Isabel Juarez Torres\nCuenta: [NUMERO_DONATIVO]"
       }
     ],
     blessing: "Que cada regalo sea una bendición que acompañe a Mia Isabel en su crecimiento"

@@ -95,11 +95,7 @@ export function BasicGiftOptions({ data = miaIsabelBautizoData, theme: _theme }:
               <p className="text-sm text-gray-600">Artículos especiales para acompañar el crecimiento de nuestra bebé</p>
             </div>
             
-            <div className="space-y-2">
-              <div className="text-3xl">🙏</div>
-              <h4 className="font-semibold text-pink-700">Acto de Bondad</h4>
-              <p className="text-sm text-gray-600">Ayudar a otros niños en honor a Mia Isabel es un hermoso gesto</p>
-            </div>
+            
           </div>
         </div>
 
