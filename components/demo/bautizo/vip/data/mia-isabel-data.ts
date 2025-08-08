@@ -92,7 +92,7 @@ export const miaIsabelBautizoData = {
     title: "INVITACIÓN DE BAUTISMO",
     message: "Con inmensa alegría y bendición de Dios, Reyna Monserrat te invita a celebrar",
     subtitle: "El Bautismo de su pequeña princesa",
-    blessing: "Con la bendición de Dios y el corazón lleno de gratitud:",
+    blessing: "Con el corazón agradecido y lleno de amor:",
     celebrant: "Mia Isabel Juarez Torres",
     parents: {
       mother: "REYNA MONSERRAT JUAREZ TORRES"
