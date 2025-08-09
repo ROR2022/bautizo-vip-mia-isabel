@@ -62,7 +62,7 @@ export const miaIsabelBautizoData = {
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX", // Ej: "Av. Constitución 789"
       type: "Celebración Familiar"
     },
-    dressCode: "Formal al estilo mexicano",
+    dressCode: "Sugerencia Formal al Estilo Mexicano",
     theme: "Mexicano Tradicional - Cielito Lindo"
   },
 
