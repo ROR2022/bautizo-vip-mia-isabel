@@ -254,11 +254,10 @@ export function BasicEventDetails({
                 theme ? "text-pink-700" : "text-sky-700"
               } italic`}
             >
-              &ldquo;Antes que te formase en el vientre te conocí, y antes que nacieses te santifiqué&rdquo;
+              &ldquo;Eres obra perfecta de Dios, creado con amor y
+              destinado a brillar con su luz.&rdquo;
             </p>
-            <p className="text-center text-xs text-gray-500 mt-1">
-              Jeremías 1:5
-            </p>
+            
           </div>
         </div>
 
