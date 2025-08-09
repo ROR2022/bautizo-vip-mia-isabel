@@ -52,7 +52,7 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
           </div>
 
           {/* Información de la bebé */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 hidden">
             <div className={`${theme ? 'bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200' : 'bg-gradient-to-r from-sky-100 to-pink-100 border-sky-200'} rounded-xl p-6 mb-6 border`}>
               <div className="text-4xl mb-4">✨</div>
               <h4 className={`text-3xl font-bold ${theme ? 'text-pink-800' : 'text-sky-800'} mb-2`}>
