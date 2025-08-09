@@ -116,7 +116,7 @@ export function BasicGiftOptions({ data = miaIsabelBautizoData, theme: _theme }:
                 <ul className="text-sm text-pink-700 space-y-1">
                   <li>• Lo más importante es su presencia y bendiciones</li>
                   <li>• Cualquier gesto viene del corazón</li>
-                  <li>• No hay obligation de obsequiar algo</li>
+                  <li>• No hay obligación de obsequiar algo</li>
                 </ul>
               </div>
               
