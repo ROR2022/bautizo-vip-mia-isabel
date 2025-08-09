@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, Navigation } from "lucide-react";
 import {
   MiaIsabelBautizoData,
   miaIsabelBautizoData,
@@ -16,6 +16,13 @@ export function BasicEventDetails({
   data = miaIsabelBautizoData,
   theme,
 }: BasicEventDetailsProps) {
+  // Función para abrir Google Maps con la dirección
+  const openInMaps = (address: string) => {
+    const encodedAddress = encodeURIComponent(address)
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`
+    window.open(mapsUrl, '_blank')
+  }
+
   return (
     <section
       className="py-16 px-4 relative overflow-hidden"
@@ -87,7 +94,7 @@ export function BasicEventDetails({
           </p>
 
           {/* Familia Personalizada */}
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
+          <div className="gap-6 mt-8 hidden">
             <div
               className={`${
                 theme
@@ -197,7 +204,7 @@ export function BasicEventDetails({
                     theme ? "text-pink-500" : "text-sky-500"
                   } mt-1`}
                 />
-                <div>
+                <div className="flex-1">
                   <p
                     className={`font-semibold ${
                       theme ? "text-pink-800" : "text-sky-800"
@@ -205,7 +212,20 @@ export function BasicEventDetails({
                   >
                     {data.event.ceremony.venue}
                   </p>
-                  <p className="text-gray-600">{data.event.ceremony.address}</p>
+                  <p className="text-gray-600 mb-3">{data.event.ceremony.address}</p>
+                  
+                  {/* Botón Ir a Maps para ceremonia */}
+                  <button
+                    onClick={() => openInMaps(data.event.ceremony.address)}
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-md ${
+                      theme 
+                        ? 'bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white'
+                        : 'bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 text-white'
+                    }`}
+                  >
+                    <Navigation className="w-4 h-4" />
+                    Ir a Maps
+                  </button>
                 </div>
               </div>
             </div>
@@ -310,7 +330,7 @@ export function BasicEventDetails({
                     theme ? "text-rose-500" : "text-pink-500"
                   } mt-1`}
                 />
-                <div>
+                <div className="flex-1">
                   <p
                     className={`font-semibold ${
                       theme ? "text-rose-800" : "text-pink-800"
@@ -318,9 +338,22 @@ export function BasicEventDetails({
                   >
                     {data.event.celebration.venue}
                   </p>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 mb-3">
                     {data.event.celebration.address}
                   </p>
+                  
+                  {/* Botón Ir a Maps para celebración */}
+                  <button
+                    onClick={() => openInMaps(data.event.celebration.address)}
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-md ${
+                      theme 
+                        ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white'
+                        : 'bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white'
+                    }`}
+                  >
+                    <Navigation className="w-4 h-4" />
+                    Ir a Maps
+                  </button>
                 </div>
               </div>
             </div>

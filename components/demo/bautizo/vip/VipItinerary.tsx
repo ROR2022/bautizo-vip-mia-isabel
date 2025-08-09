@@ -197,7 +197,7 @@ export function VipItinerary({ data: _data = miaIsabelBautizoData, theme: _theme
          * el texto debe ser de color rosa
          */}
 
-         <div className="text-center mt-16">
+         <div className="text-center mt-16 hidden">
           <div className="bg-pink-100 rounded-2xl p-8 border border-pink-200 text-center">
             <h3 className="text-2xl font-bold text-pink-800">Nota Final</h3>
             <p className="text-sm text-pink-700">

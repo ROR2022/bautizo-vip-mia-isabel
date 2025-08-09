@@ -381,11 +381,11 @@ ${data.invitation.parents.mother} 💖🌸`;
                 celebración de {data.hero.name}.
               </>
             ) : (
-              <>
+              <div className="hidden">
                 Funcionalidad disponible para organizadores del evento. Permite
                 crear invitaciones personalizadas para la celebración de{" "}
                 {data.hero.name}.
-              </>
+              </div>
             )}
           </p>
         </div>
@@ -896,6 +896,7 @@ ${data.invitation.parents.mother} 💖🌸`;
           </div>
         ) : (
           <div
+          style={{display: 'none'}}
             className={`${
               theme
                 ? "bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200"
@@ -930,6 +931,7 @@ ${data.invitation.parents.mother} 💖🌸`;
 
         {/* Información adicional */}
         <div
+        style={{display: 'none'}}
           className={`mt-16 ${
             theme
               ? "bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200"
@@ -1005,7 +1007,9 @@ ${data.invitation.parents.mother} 💖🌸`;
               </div>
             </div>
 
-            <div className="mt-6 p-4 bg-white/50 rounded-xl">
+            <div 
+            style={{display: 'none'}}
+            className="mt-6 p-4 bg-white/50 rounded-xl">
               <p
                 className={`text-sm ${
                   theme ? "text-pink-700" : "text-sky-700"
