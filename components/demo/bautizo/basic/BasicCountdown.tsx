@@ -119,7 +119,9 @@ export function BasicCountdown({ data = miaIsabelBautizoData, theme }: BasicCoun
         </div>
         
         {/* Mensaje celestial */}
-        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20">
+        <div 
+        style={{display: 'none'}}
+        className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20">
           <div className="text-3xl mb-4">✨</div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Un día de gracia y bendición se acerca

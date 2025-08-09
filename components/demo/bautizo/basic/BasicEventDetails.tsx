@@ -60,6 +60,7 @@ export function BasicEventDetails({
 
         {/* Información de Sofia Valentina */}
         <div
+        style={{display: 'none'}}
           className={`bg-white rounded-2xl p-8 mb-8 text-center border-2 ${
             theme ? "border-pink-100" : "border-sky-100"
           } shadow-lg`}

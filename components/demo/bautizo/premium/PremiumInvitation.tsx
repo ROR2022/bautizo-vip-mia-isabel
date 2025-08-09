@@ -40,7 +40,10 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
         </div>
 
         {/* Contenido principal de la invitación */}
-        <div className={`bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 ${theme ? 'border-pink-100' : 'border-sky-100'}`}>
+
+        <div 
+        
+        className={`bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 ${theme ? 'border-pink-100' : 'border-sky-100'}`}>
           {/* Título principal */}
           <div className="text-center mb-8">
             <h3 className={`text-4xl md:text-5xl font-bold ${theme ? 'text-pink-700' : 'text-sky-700'} mb-4`}>
@@ -52,7 +55,7 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
           </div>
 
           {/* Información de la bebé */}
-          <div className="text-center mb-8 hidden">
+          <div className="text-center mb-8">
             <div className={`${theme ? 'bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200' : 'bg-gradient-to-r from-sky-100 to-pink-100 border-sky-200'} rounded-xl p-6 mb-6 border`}>
               <div className="text-4xl mb-4">✨</div>
               <h4 className={`text-3xl font-bold ${theme ? 'text-pink-800' : 'text-sky-800'} mb-2`}>
