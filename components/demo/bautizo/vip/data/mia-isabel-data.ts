@@ -566,11 +566,6 @@ export const miaIsabelBautizoData = {
       role: "Abuelos Maternos", 
       names: ["Rosendo Juárez Diaz", "Reyna Beatriz Torres de la Fuente"],
       description: "Pilares de sabiduría y bendiciones familiares"
-    },
-    { 
-      role: "Tíos Especiales", 
-      names: ["[TIO_1]", "[TIA_1]"],
-      description: "Quienes llenarán de alegría y cariño la vida de Mia Isabel"
     }
   ],
   
