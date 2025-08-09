@@ -604,7 +604,7 @@ export const miaIsabelBautizoData = {
         icon: "👶",
         title: "Mesa de Regalos",
         description: "Liverpool", 
-        details: "Evento: Bautizo Mia Isabel Juarez Torres\nNúmero de Evento: 51740042"
+        details: "Evento: Mi Bautizo y Mi Primer Año Mia Isabel Juarez Torres\nNúmero de Evento: 51740042"
       }
     ],
     blessing: "Que cada regalo sea una bendición que acompañe a Mia Isabel en su crecimiento"
