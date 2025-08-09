@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react'
-import { CheckCircle, XCircle, Heart } from 'lucide-react'
+import { CheckCircle, XCircle, Heart, MessageSquare } from 'lucide-react'
 import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
@@ -28,6 +28,37 @@ export function BasicAttendance({ data = miaIsabelBautizoData, theme: _theme }: 
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
+  }
+
+  // Función para generar mensaje de WhatsApp
+  const generateWhatsAppMessage = () => {
+    const whatsappMessage = `🌸 *Confirmación de Asistencia - Bautizo de Mia Isabel* 🌸
+
+Hola, confirmo mi asistencia al bautismo de:
+👶 *Mia Isabel Juarez Torres*
+
+📅 *Fecha:* ${data.event.date?.full || "Sábado 6 de Septiembre 2025"}
+⛪ *Ceremonia:* ${data.event.ceremony?.time || "12:30 hrs"} - ${data.event.ceremony?.venue || "Santuario del Señor de las Misericordias"}
+🎉 *Celebración:* ${data.event.celebration?.time || "14:30 hrs"} - ${data.event.celebration?.venue || "Salón Mario Alberto"}
+
+👤 *Nombre:* ${formData.name}
+✅ *Asistencia:* ${formData.response === 'yes' ? 'SÍ asistiré' : 'NO podré asistir'}${formData.companions ? `\n👥 *Acompañantes:* ${formData.companions}` : ''}
+📱 *Contacto:* ${formData.phone}
+
+¡Gracias por la invitación! 🙏💖
+
+_Enviado desde la invitación digital_`
+
+    return encodeURIComponent(whatsappMessage)
+  }
+
+  // Función para enviar por WhatsApp
+  const sendToWhatsApp = () => {
+    const phoneNumber = "5215538970588" // Número mexicano con código de país
+    const message = generateWhatsAppMessage()
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
+    
+    window.open(whatsappUrl, '_blank')
   }
 
   return (
@@ -135,19 +166,54 @@ export function BasicAttendance({ data = miaIsabelBautizoData, theme: _theme }: 
               />
             </div>
 
-            {/* Botón enviar */}
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-4 px-6 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Confirmar Asistencia
-            </button>
+            {/* Botones de acción */}
+            <div className="grid grid-cols-1  gap-4">
+              
+              
+              <button
+                type="button"
+                onClick={sendToWhatsApp}
+                disabled={!formData.name || !formData.response || !formData.phone}
+                className={`py-4 px-6 rounded-lg font-semibold transition-all duration-300 shadow-lg flex items-center justify-center gap-2 ${
+                  (!formData.name || !formData.response || !formData.phone)
+                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    : 'bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 hover:shadow-xl'
+                }`}
+                title={(!formData.name || !formData.response || !formData.phone) ? 'Completa todos los campos obligatorios para enviar por WhatsApp' : 'Enviar confirmación por WhatsApp'}
+              >
+                <MessageSquare className="w-5 h-5" />
+                {(!formData.name || !formData.response || !formData.phone) 
+                  ? 'Completa el formulario' 
+                  : 'Enviar por WhatsApp'
+                }
+              </button>
+            </div>
+
+            {/* Estado del formulario */}
+            {(!formData.name || !formData.response || !formData.phone) && (
+              <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                <p className="text-center text-sm text-amber-700">
+                  <strong>⚠️ Campos faltantes:</strong> {
+                    [
+                      !formData.name && 'Nombre',
+                      !formData.response && 'Respuesta de asistencia', 
+                      !formData.phone && 'Teléfono'
+                    ].filter(Boolean).join(', ')
+                  }
+                </p>
+              </div>
+            )}
 
             {/* Nota adicional */}
-            <div className="mt-6 p-4 bg-gradient-to-r from-pink-50 to-rose-50 rounded-lg border border-pink-200">
-              <p className="text-center text-sm text-pink-700">
-                <strong>🙏 Nota:</strong> {data.attendance.additionalInfo?.note || 'Por favor confirma tu asistencia para poder organizar mejor la celebración.'}
-              </p>
+            <div className="mt-6 space-y-4">
+              <div className="p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
+                <p className="text-center text-sm text-green-700">
+                  <strong>📱 WhatsApp:</strong> Puedes enviar tu confirmación directamente por WhatsApp para una respuesta más rápida.
+                </p>
+                <p className="text-center text-xs text-green-600 mt-2">
+                  💡 <strong>Tip:</strong> Completa todos los campos obligatorios (nombre, respuesta y teléfono) para activar el botón de WhatsApp.
+                </p>
+              </div>
             </div>
           </form>
         ) : (
@@ -184,15 +250,25 @@ export function BasicAttendance({ data = miaIsabelBautizoData, theme: _theme }: 
               </p>
             </div>
 
-            <button
-              onClick={() => {
-                setIsSubmitted(false)
-                setFormData({ name: '', response: '', companions: '', phone: '' })
-              }}
-              className="mt-6 text-pink-600 hover:text-pink-800 underline text-sm"
-            >
-              Enviar otra confirmación
-            </button>
+            <div className="mt-6 flex flex-col gap-4">
+              <button
+                onClick={sendToWhatsApp}
+                className="bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+              >
+                <MessageSquare className="w-5 h-5" />
+                Enviar Confirmación por WhatsApp
+              </button>
+              
+              <button
+                onClick={() => {
+                  setIsSubmitted(false)
+                  setFormData({ name: '', response: '', companions: '', phone: '' })
+                }}
+                className="text-pink-600 hover:text-pink-800 underline text-sm"
+              >
+                Enviar otra confirmación
+              </button>
+            </div>
           </div>
         )}
 

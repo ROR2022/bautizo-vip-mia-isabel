@@ -195,10 +195,10 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
           {/* Verso bíblico */}
           <div className="text-center mt-8 pt-6 border-t border-sky-100">
             <p className="text-sm text-sky-600 italic">
-              &quot;Porque de los tales es el Reino de los Cielos&quot;
+              &quot;Antes que te formase en el vientre te conocí, y antes que nacieses te santifiqué&quot;
             </p>
             <p className="text-xs text-gray-500 mt-1">
-              Mateo 19:14
+            Jeremías 1:5
             </p>
           </div>
         </div>

@@ -3,7 +3,6 @@
 import { useState, useCallback, useEffect } from 'react'
 import { X, ChevronLeft, ChevronRight, Heart, Sparkles } from 'lucide-react'
 import Image from 'next/image'
-import { vipDemoData } from './data/vip-demo-data'
 import { MiaIsabelBautizoData, miaIsabelBautizoData } from './data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
@@ -13,11 +12,11 @@ interface VipGalleryProps {
 }
 
 export function VipGallery({ data = miaIsabelBautizoData, theme: _theme }: VipGalleryProps) { // eslint-disable-line @typescript-eslint/no-unused-vars
-  const [selectedCategory, setSelectedCategory] = useState(data.gallery.categories[0].name)
+  const [selectedCategory, setSelectedCategory] = useState(data.galleryCategories[0].name)
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const currentCategory = data.gallery.categories.find(cat => cat.name === selectedCategory)
+  const currentCategory = data.galleryCategories.find(cat => cat.name === selectedCategory)
   const currentImages = currentCategory?.images || []
 
   const closeModal = useCallback(() => {
@@ -96,7 +95,7 @@ export function VipGallery({ data = miaIsabelBautizoData, theme: _theme }: VipGa
 
         {/* Selector de categorías */}
         <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {data.gallery.categories.map((category) => (
+          {data.galleryCategories.map((category) => (
             <button
               key={category.name}
               onClick={() => setSelectedCategory(category.name)}

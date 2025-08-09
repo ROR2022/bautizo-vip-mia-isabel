@@ -85,14 +85,14 @@ export function BasicGiftOptions({ data = miaIsabelBautizoData, theme: _theme }:
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="space-y-2">
               <div className="text-3xl">💰</div>
-              <h4 className="font-semibold text-pink-700">Ahorro Futuro</h4>
-              <p className="text-sm text-gray-600">Una cuenta de ahorro será el mejor regalo para el futuro de Mia Isabel</p>
+              <h4 className="font-semibold text-pink-700">Regalo sorpresa</h4>
+              <p className="text-sm text-gray-600">Una sorpresa para Mia Isabel</p>
             </div>
             
             <div className="space-y-2">
               <div className="text-3xl">👶</div>
-              <h4 className="font-semibold text-pink-700">Regalos Infantiles</h4>
-              <p className="text-sm text-gray-600">Artículos especiales para acompañar el crecimiento de nuestra bebé</p>
+              <h4 className="font-semibold text-pink-700">Mesa de Regalos</h4>
+              <p className="text-sm text-gray-600">Liverpool</p>
             </div>
             
             

@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, X, Camera, Crown, Sparkles, Grid, List } fro
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { useIsClient } from "@/hooks/useIsClient"
-import { vipDemoData } from "./data/vip-demo-data"
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../../bautizo/vip/data/mia-isabel-data'
 
 export function VipGallery() {
   const [currentCategory, setCurrentCategory] = useState(0)
@@ -17,7 +17,7 @@ export function VipGallery() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
   const isClient = useIsClient()
 
-  const currentCategoryData = vipDemoData.galleryCategories[currentCategory]
+  const currentCategoryData = miaIsabelBautizoData.galleryCategories[currentCategory]
   const currentImages = currentCategoryData.images
 
   const goToPrevious = useCallback(() => {
@@ -118,7 +118,7 @@ export function VipGallery() {
         {/* Navegación de categorías */}
         <div className="mb-8">
           <div className="flex flex-wrap justify-center gap-4 mb-6">
-            {vipDemoData.galleryCategories.map((category, index) => (
+            {miaIsabelBautizoData.galleryCategories.map((category, index) => (
               <Button
                 key={category.id}
                 onClick={() => selectCategory(index)}

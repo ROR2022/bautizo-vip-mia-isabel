@@ -135,11 +135,10 @@ export function BasicCountdown({ data = miaIsabelBautizoData, theme }: BasicCoun
         {/* Verso bíblico */}
         <div className="mt-8 bg-white/15 backdrop-blur-sm rounded-xl p-6 border border-white/20">
           <p className="text-lg italic opacity-90 mb-2">
-            &ldquo;Porque de los tales es el Reino de los Cielos&rdquo;
+            &ldquo;Eres obra perfecta de Dios, creado con amor y
+            destinado a brillar con su luz&rdquo;
           </p>
-          <p className="text-sm opacity-70">
-            Mateo 19:14
-          </p>
+          
         </div>
       </div>
     </section>

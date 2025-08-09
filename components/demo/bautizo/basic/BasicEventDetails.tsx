@@ -254,10 +254,10 @@ export function BasicEventDetails({
                 theme ? "text-pink-700" : "text-sky-700"
               } italic`}
             >
-              &ldquo;Porque de los tales es el Reino de los Cielos&rdquo;
+              &ldquo;Antes que te formase en el vientre te conocí, y antes que nacieses te santifiqué&rdquo;
             </p>
             <p className="text-center text-xs text-gray-500 mt-1">
-              Mateo 19:14
+              Jeremías 1:5
             </p>
           </div>
         </div>

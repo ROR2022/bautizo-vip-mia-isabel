@@ -62,7 +62,7 @@ export const miaIsabelBautizoData = {
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX", // Ej: "Av. Constitución 789"
       type: "Celebración Familiar"
     },
-    dressCode: "Formal Elegante - Mexicano Tradicional",
+    dressCode: "Formal al estilo mexicano",
     theme: "Mexicano Tradicional - Cielito Lindo"
   },
 
@@ -435,6 +435,121 @@ export const miaIsabelBautizoData = {
     ]
   },
 
+  // 📸 GALERÍA VIP CATEGORIZADA - Fotos reales de Mia Isabel
+  galleryCategories: [
+    {
+      id: "bautizo",
+      name: "Fotos del Bautizo",
+      icon: "✨",
+      color: "text-pink-600",
+      description: "Momentos especiales del sacramento del bautismo de Mia Isabel",
+      images: [
+        {
+          src: "/images/custom/bautizo/A.jpg",
+          caption: "Preparativos para el gran día",
+          year: "2024",
+          alt: "Mia Isabel preparándose para su bautizo"
+        },
+        {
+          src: "/images/custom/bautizo/B.jpg",
+          caption: "El hermoso vestido angelical",
+          year: "2024",
+          alt: "Vestido de bautizo de Mia Isabel"
+        },
+        {
+          src: "/images/custom/bautizo/C.jpg",
+          caption: "Momento sagrado y especial",
+          year: "2024",
+          alt: "Ceremonia de bautismo"
+        },
+        {
+          src: "/images/custom/bautizo/D.jpg",
+          caption: "Bendiciones familiares",
+          year: "2024",
+          alt: "Familia reunida en el bautizo"
+        }
+      ]
+    },
+    {
+      id: "campo",
+      name: "Momentos en el Campo",
+      icon: "🌸",
+      color: "text-green-600",
+      description: "Mia Isabel disfrutando de la naturaleza y momentos al aire libre",
+      images: [
+        {
+          src: "/images/custom/campo/fotoMia1.jpg",
+          caption: "Explorando la naturaleza",
+          year: "2024",
+          alt: "Mia Isabel en el campo"
+        },
+        {
+          src: "/images/custom/campo/fotoMia2.jpg",
+          caption: "Entre flores y mariposas",
+          year: "2024",
+          alt: "Mia Isabel con flores"
+        },
+        {
+          src: "/images/custom/campo/fotoMia3.jpg",
+          caption: "Jugando al aire libre",
+          year: "2024",
+          alt: "Mia Isabel jugando en el campo"
+        },
+        {
+          src: "/images/custom/campo/fotoMia4.jpg",
+          caption: "Sonrisas bajo el cielo azul",
+          year: "2024",
+          alt: "Mia Isabel sonriendo en el campo"
+        }
+      ]
+    },
+    {
+      id: "casual",
+      name: "Momentos Cotidianos",
+      icon: "💕",
+      color: "text-purple-600",
+      description: "La vida diaria de Mia Isabel, llena de amor y alegría",
+      images: [
+        {
+          src: "/images/custom/casual/fotoMia5.jpg",
+          caption: "Momentos de ternura",
+          year: "2024",
+          alt: "Mia Isabel en casa"
+        },
+        {
+          src: "/images/custom/casual/fotoMia6.jpg",
+          caption: "Descubriendo el mundo",
+          year: "2024",
+          alt: "Mia Isabel explorando"
+        },
+        {
+          src: "/images/custom/casual/fotoMia7.jpg",
+          caption: "Risas y travesuras",
+          year: "2024",
+          alt: "Mia Isabel riendo"
+        },
+        {
+          src: "/images/custom/casual/fotoMia8.jpg",
+          caption: "Creciendo con amor",
+          year: "2024",
+          alt: "Mia Isabel creciendo"
+        },
+        {
+          src: "/images/custom/casual/fotoMia9.jpg",
+          caption: "Pequeños grandes momentos",
+          year: "2024",
+          alt: "Momentos especiales de Mia Isabel"
+        },
+        {
+          src: "/images/custom/casual/fotoMia10.jpg",
+          caption: "Nuestra pequeña princesa",
+          year: "2024",
+          alt: "Mia Isabel, la princesa de la familia"
+        }
+      ]
+    }
+  ],
+
   // Lista de familia adaptada para madre soltera
   family: [
     { 
@@ -486,15 +601,15 @@ export const miaIsabelBautizoData = {
     options: [
       {
         icon: "💰",
-        title: "Cuenta de Ahorro para Mia Isabel",
-        description: "[BANCO_A_DEFINIR]", // A definir
-        details: "Cuenta: [NUMERO_CUENTA]\nCLABE: [CLABE]\nA nombre de: Mia Isabel Juarez Torres"
+        title: "Regalo sorpresa",
+        description: "Sorpresa", 
+        details: "Regalo sorpresa"
       },
       {
         icon: "👶",
-        title: "Mesa de Regalos Infantil",
-        description: "[TIENDA_A_DEFINIR]", // A definir
-        details: "Evento: Bautizo Mia Isabel Juarez Torres\nCódigo: [CODIGO_EVENTO]"
+        title: "Mesa de Regalos",
+        description: "Liverpool", 
+        details: "Evento: Bautizo Mia Isabel Juarez Torres\nNúmero de Evento: 51740042"
       }
     ],
     blessing: "Que cada regalo sea una bendición que acompañe a Mia Isabel en su crecimiento"
