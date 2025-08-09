@@ -119,7 +119,7 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
           </div>
 
           {/* Información de la ceremonia y celebración */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="hidden gap-8 mb-8">
             {/* Ceremonia */}
             <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
               <div className="flex items-center gap-3 mb-4">

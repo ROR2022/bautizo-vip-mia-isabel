@@ -255,7 +255,7 @@ export function BasicEventDetails({
                 <li>• Llegar 30 minutos antes de la ceremonia</li>
                 <li>• Vestimenta: {data.event.dressCode}</li>
                 <li>• Ambiente familiar y de bendición</li>
-                <li>• Se tomará sesión de fotos después del sacramento</li>
+                <li>• Se tomaran fotos después del sacramento</li>
                 {theme && <li>• Celebración al estilo mexicano tradicional</li>}
               </ul>
             </div>

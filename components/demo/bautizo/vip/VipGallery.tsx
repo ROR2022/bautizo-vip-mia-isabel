@@ -133,7 +133,7 @@ export function VipGallery({ data = miaIsabelBautizoData, theme: _theme }: VipGa
               {currentImages.map((image, index) => (
                 <div
                   key={index}
-                  className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:scale-105 transition-all duration-300 border-2 border-pink-100"
+                  className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:scale-105 transition-all duration-300 border-2 border-pink-100 flex items-center justify-center"
                   onClick={() => openImage(index)}
                 >
                   <Image
@@ -141,7 +141,7 @@ export function VipGallery({ data = miaIsabelBautizoData, theme: _theme }: VipGa
                     alt={image.alt}
                     width={400}
                     height={256}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-64 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                   />
                   
                   {/* Overlay con información */}
@@ -174,7 +174,7 @@ export function VipGallery({ data = miaIsabelBautizoData, theme: _theme }: VipGa
                 alt={currentImages[currentImageIndex]?.alt || ''}
                 width={800}
                 height={600}
-                className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                className="max-w-full max-h-[80vh] object-contain rounded-lg bg-black/20"
               />
               
               {/* Información de la imagen */}
