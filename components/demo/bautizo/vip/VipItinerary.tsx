@@ -210,7 +210,9 @@ export function VipItinerary({ data: _data = miaIsabelBautizoData, theme: _theme
 
 
         {/* Nota final celestial */}
-        <div className="mt-16 bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl p-8 border border-pink-200 text-center">
+        <div 
+        style={{display: 'none'}}
+        className="mt-16 bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl p-8 border border-pink-200 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="w-6 h-6 text-rose-500" />
             <h3 className="text-2xl font-bold text-pink-800">Un Día de Bendiciones</h3>

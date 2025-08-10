@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, X, Camera, Crown, Sparkles, Grid, List } fro
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { useIsClient } from "@/hooks/useIsClient"
-import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../../bautizo/vip/data/mia-isabel-data'
+import { miaIsabelBautizoData } from '../../bautizo/vip/data/mia-isabel-data'
 
 export function VipGallery() {
   const [currentCategory, setCurrentCategory] = useState(0)

@@ -3,10 +3,8 @@ import { VipHero } from "@/components/demo/bautizo/vip/VipHero";
 import { PremiumInvitation } from "@/components/demo/bautizo/premium/PremiumInvitation";
 import { BasicCountdown } from "@/components/demo/bautizo/basic/BasicCountdown";
 import { BasicEventDetails } from "@/components/demo/bautizo/basic/BasicEventDetails";
-import { VipGuestInfo } from "@/components/demo/bautizo/vip/VipGuestInfo";
 import { VipItinerary } from "@/components/demo/bautizo/vip/VipItinerary";
 import { VipFamilyRoles } from "@/components/demo/bautizo/vip/VipFamilyRoles";
-import { VipPlaylist } from "@/components/demo/bautizo/vip/VipPlaylist";
 import { VipGallery } from "@/components/demo/bautizo/vip/VipGallery";
 import { PremiumFamily } from "@/components/demo/bautizo/premium/PremiumFamily";
 import { BasicAttendance } from "@/components/demo/bautizo/basic/BasicAttendance";
@@ -15,7 +13,10 @@ import { PremiumThankYou } from "@/components/demo/bautizo/premium/PremiumThankY
 
 // 🎊 DATOS PERSONALIZADOS PARA MIA ISABEL
 import { miaIsabelBautizoData } from "@/components/demo/bautizo/vip/data/mia-isabel-data";
-import { miaIsabelTheme, getMiaIsabelClasses } from "@/lib/themes/mia-isabel-theme";
+import {
+  miaIsabelTheme,
+  getMiaIsabelClasses,
+} from "@/lib/themes/mia-isabel-theme";
 
 export default function MiaIsabelBautizoPage() {
   return (
@@ -53,11 +54,11 @@ export default function MiaIsabelBautizoPage() {
         {/* 👥 FAMILIA JUAREZ TORRES - Adaptado para madre soltera */}
         <PremiumFamily data={miaIsabelBautizoData} theme={miaIsabelTheme} />
 
-        {/* ✅ CONFIRMACIÓN DE ASISTENCIA - Para el bautizo de Mia Isabel */}
-        <BasicAttendance data={miaIsabelBautizoData} theme={miaIsabelTheme} />
-
         {/* 🎁 BENDICIONES PARA MIA ISABEL - Opciones de regalo personalizadas */}
         <BasicGiftOptions data={miaIsabelBautizoData} theme={miaIsabelTheme} />
+
+        {/* ✅ CONFIRMACIÓN DE ASISTENCIA - Para el bautizo de Mia Isabel */}
+        <BasicAttendance data={miaIsabelBautizoData} theme={miaIsabelTheme} />
 
         {/* 💝 MENSAJE DE REYNA MONSERRAT - Gratitud maternal */}
         <PremiumThankYou data={miaIsabelBautizoData} theme={miaIsabelTheme} />

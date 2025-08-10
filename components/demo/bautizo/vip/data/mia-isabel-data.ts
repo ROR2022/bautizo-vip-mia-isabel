@@ -151,7 +151,7 @@ export const miaIsabelBautizoData = {
   itinerary: [
     {
       time: "12:30 hrs.", // A definir
-      activity: "Llegada de la familia e invitados", 
+      activity: "Cita para familia e invitados", 
       location: "Santuario del Señor de las Misericordias",
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
       description: "Preparativos y encuentro con el padre celebrante para Mia Isabel",
@@ -192,15 +192,6 @@ export const miaIsabelBautizoData = {
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
       description: "Recepción y celebración en honor a Mia Isabel",
       icon: "🎉",
-      type: "celebration"
-    },
-    {
-      time: "15:00 hrs.", 
-      activity: "Tiempo de convivencia",
-      location: "Salón Mario Alberto",
-      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
-      description: "Convivencia familiar y bendiciones para Mia Isabel",
-      icon: "👼",
       type: "celebration"
     },
     {

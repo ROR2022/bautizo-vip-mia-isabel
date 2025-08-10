@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { ChevronDown, Play, Pause } from "lucide-react"
 import { motion } from "framer-motion"
 import { useMusicContext } from "@/context/music-context"
-import { vipDemoData } from "./data/vip-demo-data"
+
 import { MiaIsabelBautizoData, miaIsabelBautizoData } from "./data/mia-isabel-data"
 import { MiaIsabelTheme } from "@/lib/themes/mia-isabel-theme"
 
@@ -121,6 +121,7 @@ export function VipHero({ data = miaIsabelBautizoData, theme }: VipHeroProps) {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
             className="mt-8 space-y-2"
+            style={{display: 'none'}}
           >
             <p className="text-xl md:text-2xl font-medium text-white">
               {data.event.date.full}

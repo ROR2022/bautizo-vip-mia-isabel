@@ -408,7 +408,9 @@ export function BasicEventDetails({
         </div>
 
         {/* Temática */}
-        <div className="mt-8 text-center">
+        <div 
+        style={{display: 'none'}}
+        className="mt-8 text-center">
           <div className="inline-block bg-gradient-to-r from-sky-100 to-pink-100 px-6 py-3 rounded-full border border-sky-200">
             <p className="text-sky-700 font-medium">
               <span className="text-lg">☁️</span> Temática: {data.event.theme}{" "}

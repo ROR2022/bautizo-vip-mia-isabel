@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { Heart } from 'lucide-react'
-import { premiumDemoData } from './data/premium-demo-data'
-import { MiaIsabelBautizoData } from '../vip/data/mia-isabel-data'
+
+import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
 interface PremiumFamilyProps {
@@ -11,7 +11,7 @@ interface PremiumFamilyProps {
   theme?: MiaIsabelTheme;
 }
 
-export function PremiumFamily({ data = premiumDemoData, theme }: PremiumFamilyProps) {
+export function PremiumFamily({ data = miaIsabelBautizoData, theme }: PremiumFamilyProps) {
   const [selectedFamily, setSelectedFamily] = useState<number | null>(null)
 
   return (
@@ -59,7 +59,7 @@ export function PremiumFamily({ data = premiumDemoData, theme }: PremiumFamilyPr
               {/* Icono y rol */}
               <div className="flex items-center gap-3 mb-4">
                 <div className={`w-12 h-12 ${theme ? 'bg-gradient-to-r from-pink-400 to-rose-400' : 'bg-gradient-to-r from-sky-400 to-pink-400'} rounded-full flex items-center justify-center text-white`}>
-                  <span className="text-xl">{familyMember.role === 'Madre Amorosa' ? '💖' : (familyMember.icon || '👥')}</span>
+                  <span className="text-xl">{familyMember.role === 'Madre Amorosa' ? '💖' : '👥'}</span>
                 </div>
                 <h3 className={`text-lg font-bold ${theme ? 'text-pink-800' : 'text-sky-800'}`}>
                   {familyMember.role}
@@ -96,7 +96,9 @@ export function PremiumFamily({ data = premiumDemoData, theme }: PremiumFamilyPr
         </div>
 
         {/* Mensaje especial */}
-        <div className={`mt-16 ${theme ? 'bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200' : 'bg-gradient-to-r from-sky-100 to-pink-100 border-sky-200'} rounded-2xl p-8 border`}>
+        <div 
+        style={{display: 'none'}}
+        className={`mt-16 ${theme ? 'bg-gradient-to-r from-pink-100 to-rose-100 border-pink-200' : 'bg-gradient-to-r from-sky-100 to-pink-100 border-sky-200'} rounded-2xl p-8 border`}>
           <div className="text-center">
             <div className="text-4xl mb-4">{theme ? '💖' : '💙'}</div>
             <h3 className={`text-2xl font-bold ${theme ? 'text-pink-800' : 'text-sky-800'} mb-4`}>

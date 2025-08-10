@@ -1,7 +1,7 @@
 "use client"
 
 import { Heart, Users } from 'lucide-react'
-import { premiumDemoData } from './data/premium-demo-data'
+
 import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
 
@@ -71,7 +71,9 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
           </div>
 
           {/* Información de padres y padrinos */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div 
+          style={{display: 'none'}}
+          className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Padres */}
             <div className={`${theme ? 'bg-pink-50 border-pink-200' : 'bg-sky-50 border-sky-200'} rounded-xl p-6 border`}>
               <div className="flex items-center gap-3 mb-4">
@@ -173,7 +175,9 @@ export function PremiumInvitation({ data = miaIsabelBautizoData, theme }: Premiu
           </div>
 
           {/* Mensaje decorativo celestial */}
-          <div className="text-center bg-gradient-to-r from-sky-50 to-pink-50 rounded-xl p-6 border border-sky-200">
+          <div 
+          style={{display: 'none'}}
+          className="text-center bg-gradient-to-r from-sky-50 to-pink-50 rounded-xl p-6 border border-sky-200">
             <div className="text-3xl mb-3">☁️✨☁️</div>
             <p className="text-lg text-sky-700 italic font-medium">
               {data.invitation.decorativeMessage}
