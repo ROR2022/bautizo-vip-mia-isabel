@@ -29,7 +29,6 @@ interface VipFamilyRolesProps {
 interface InvitationFormData {
   guestName: string;
   personalMessage: string;
-  tableNumber: string;
   numberOfGuests: string;
   whatsappNumber: string;
 }
@@ -46,13 +45,12 @@ export function VipFamilyRoles({
   const [authError, setAuthError] = useState("");
 
   // 📝 Estados del formulario de invitación
-     const [formData, setFormData] = useState<InvitationFormData>({
-     guestName: "",
-     personalMessage: "",
-     tableNumber: "",
-     numberOfGuests: "",
-     whatsappNumber: "",
-   });
+       const [formData, setFormData] = useState<InvitationFormData>({
+    guestName: "",
+    personalMessage: "",
+    numberOfGuests: "",
+    whatsappNumber: "",
+  });
 
   const [isDownloading, setIsDownloading] = useState(false);
   const invitationRef = useRef<HTMLDivElement>(null);
@@ -86,8 +84,7 @@ Tienes una invitación especial al bautismo de:
 ⛪ ${data.event.ceremony?.venue || "[IGLESIA_A_DEFINIR]"}
 🕐 ${data.event.ceremony?.time || "[HORA_A_DEFINIR]"}
 
-🪑 Tu mesa asignada: ${formData.tableNumber}
-👥 Número de personas: ${formData.numberOfGuests} ${parseInt(formData.numberOfGuests) === 1 ? 'persona' : 'personas'}
+👥 Número de boletos: ${formData.numberOfGuests} ${parseInt(formData.numberOfGuests) === 1 ? 'boleto' : 'boletos'}
 
 ✨ Ver tu invitación completa aquí:
 👉 ${invitationURL}
@@ -505,29 +502,7 @@ ${data.invitation.parents.mother} 💖🌸`;
                     </div>
                   </div>
 
-                                     {/* Número de mesa */}
-                   <div>
-                     <label
-                       className={`block text-sm font-medium ${
-                         theme ? "text-pink-700" : "text-sky-700"
-                       } mb-2`}
-                     >
-                       Número de mesa *
-                     </label>
-                     <input
-                       type="text"
-                       value={formData.tableNumber}
-                       onChange={(e) =>
-                         updateFormData("tableNumber", e.target.value)
-                       }
-                       placeholder="Ej: Mesa 5"
-                       className={`w-full px-4 py-3 border ${
-                         theme
-                           ? "border-pink-200 focus:ring-pink-400"
-                           : "border-sky-200 focus:ring-sky-400"
-                       } rounded-lg focus:ring-2 focus:border-transparent`}
-                     />
-                   </div>
+                   
 
                    {/* Número de personas */}
                    <div>
@@ -761,16 +736,7 @@ ${data.invitation.parents.mother} 💖🌸`;
                               "[IGLESIA_A_DEFINIR]"}
                           </span>
                         </div>
-                                                 {formData.tableNumber && (
-                           <div
-                             className={`flex items-center gap-2 text-sm font-bold ${
-                               theme ? "text-rose-700" : "text-purple-700"
-                             }`}
-                           >
-                             <span>🪑</span>
-                             <span>Tu mesa: {formData.tableNumber}</span>
-                           </div>
-                         )}
+
                          {formData.numberOfGuests && (
                            <div
                              className={`flex items-center gap-2 text-sm font-bold ${
