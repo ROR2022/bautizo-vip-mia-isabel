@@ -46,7 +46,7 @@ export function BasicEventDetails({
             } mb-4`}
           >
             {theme
-              ? "Cuándo y Dónde - Día Especial de Mia Isabel"
+              ? "Cuándo y Dónde"
               : "Cuándo y Dónde"}
           </h2>
           <div

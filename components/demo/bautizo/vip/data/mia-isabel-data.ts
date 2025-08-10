@@ -202,15 +202,6 @@ export const miaIsabelBautizoData = {
       description: "Almuerzo especial en honor a Mia Isabel",
       icon: "🍽️",
       type: "celebration"
-    },
-    {
-      time: "16:00 hrs.", 
-      activity: "Actividades Sorpresa",
-      location: "Salón Mario Alberto",
-      address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
-      description: "Actividades sorprendentes para Mia Isabel",
-      icon: "🎉",
-      type: "celebration"
     }
   ],
   

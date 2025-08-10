@@ -28,8 +28,7 @@ export default function MiaIsabelBautizoPage() {
         {/* 📋 INVITACIÓN MEXICANA TRADICIONAL - Para Mia Isabel Juarez Torres */}
         <PremiumInvitation data={miaIsabelBautizoData} theme={miaIsabelTheme} />
 
-        {/* ⏰ CUENTA REGRESIVA AL SACRAMENTO - Para el bautizo de Mia Isabel */}
-        <BasicCountdown data={miaIsabelBautizoData} theme={miaIsabelTheme} />
+        
 
         {/* 📅 DETALLES DEL BAUTISMO - Información del evento de Mia Isabel */}
         <BasicEventDetails data={miaIsabelBautizoData} theme={miaIsabelTheme} />
@@ -56,6 +55,9 @@ export default function MiaIsabelBautizoPage() {
 
         {/* 🎁 BENDICIONES PARA MIA ISABEL - Opciones de regalo personalizadas */}
         <BasicGiftOptions data={miaIsabelBautizoData} theme={miaIsabelTheme} />
+
+        {/* ⏰ CUENTA REGRESIVA AL SACRAMENTO - Para el bautizo de Mia Isabel */}
+        <BasicCountdown data={miaIsabelBautizoData} theme={miaIsabelTheme} />
 
         {/* ✅ CONFIRMACIÓN DE ASISTENCIA - Para el bautizo de Mia Isabel */}
         <BasicAttendance data={miaIsabelBautizoData} theme={miaIsabelTheme} />
