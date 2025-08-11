@@ -178,10 +178,10 @@ export const miaIsabelBautizoData = {
     },
     {
       time: "14:00 hrs.", 
-      activity: "Sesión de fotos familiares",
+      activity: "Fotografías con Familia e invitados",
       location: "Santuario del Señor de las Misericordias",
       address: "San Pedro Atocpan, Panchimalco, Milpa Alta, 12200 San Pedro Atocpan, CDMX",
-      description: "Fotos con Reyna Monserrat, padrinos y familia de Mia Isabel",
+      description: "Fotos con Reyna Monserrat, padrinos, familia e invitados de Mia Isabel",
       icon: "📸",
       type: "photos"
     },
@@ -199,7 +199,7 @@ export const miaIsabelBautizoData = {
       activity: "Comida familiar",
       location: "Salón Mario Alberto",
       address: "Camino Real a san Pedro Actopan 14, San Gregorio Atlapulco, 16650 Ciudad de México, CDMX",
-      description: "Almuerzo especial en honor a Mia Isabel",
+      description: "Comida especial en honor a Mia Isabel",
       icon: "🍽️",
       type: "celebration"
     }
