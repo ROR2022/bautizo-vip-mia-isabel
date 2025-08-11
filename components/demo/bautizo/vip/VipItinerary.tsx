@@ -72,7 +72,7 @@ export function VipItinerary({ data: _data = miaIsabelBautizoData, theme: _theme
           
           <p className="text-lg text-pink-700 max-w-3xl mx-auto leading-relaxed">
             Cada momento de este día sagrado ha sido preparado con amor y bendiciones. 
-            Acompáñanos en cada paso de esta hermosa celebración del sacramento de Sofia Valentina.
+            Acompáñanos en cada paso de esta hermosa celebración del sacramento de Mia Isabel.
           </p>
         </div>
 
