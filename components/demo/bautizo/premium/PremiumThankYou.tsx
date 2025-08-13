@@ -3,6 +3,7 @@
 import { Heart, ArrowUp } from 'lucide-react'
 import { MiaIsabelBautizoData, miaIsabelBautizoData } from '../vip/data/mia-isabel-data'
 import { MiaIsabelTheme } from '@/lib/themes/mia-isabel-theme'
+import { premiumDemoData } from './data/premium-demo-data'
 
 interface PremiumThankYouProps {
   data?: MiaIsabelBautizoData;
@@ -113,6 +114,61 @@ export function PremiumThankYou({ data = miaIsabelBautizoData, theme: _theme }: 
         >
           <ArrowUp className="w-6 h-6" />
         </button>
+
+        {/* Contenido del CTA */}
+        <div className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 mt-8 mb-8 border border-white/10">
+          {/* Efecto de brillo exterior */}
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-600/20 via-rose-600/20 to-pink-600/20 rounded-2xl blur-xl -z-10 opacity-60"></div>
+          
+          <div className="relative z-10 text-center">
+            {/* Corona decorativa */}
+            <div className="mx-auto w-12 h-12 mb-4 text-rose-300">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15 6L19 7L17 11L19 15L15 16L12 20L9 16L5 15L7 11L5 7L9 6L12 2Z" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.2" />
+              </svg>
+            </div>
+            
+            <h3 className="text-2xl md:text-3xl font-bold mb-3 text-pink-200">
+              {premiumDemoData.thankYou.footer.cta.question}
+            </h3>
+            
+            {/* Separador decorativo */}
+            <div className="flex items-center justify-center my-4">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent via-rose-300 to-transparent"></div>
+              <div className="mx-3 text-rose-300 text-xs">✧</div>
+              <div className="h-px w-12 bg-gradient-to-r from-transparent via-rose-300 to-transparent"></div>
+            </div>
+            
+            <p className="text-pink-100 text-base mb-6 leading-relaxed max-w-md mx-auto">
+              {premiumDemoData.thankYou.footer.cta.action}
+            </p>
+            
+            {/* Botón CTA */}
+            <a
+              href={premiumDemoData.thankYou.footer.cta.link}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 via-rose-600 to-pink-600 
+                       text-white px-8 py-4 rounded-full font-semibold text-lg
+                       hover:shadow-xl hover:shadow-pink-600/30 
+                       transform hover:scale-105 transition-all duration-300
+                       border border-pink-500/20 relative overflow-hidden group"
+            >
+              {/* Efecto brillante al hover */}
+              <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              
+              {/* Icono de estrella */}
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L14 8L20 8L15 12L17 18L12 14L7 18L9 12L4 8L10 8L12 2Z" fill="currentColor" />
+              </svg>
+              
+              <span className="relative z-10">{premiumDemoData.thankYou.footer.cta.linkText}</span>
+              
+              {/* Icono de flecha */}
+              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
 
         {/* Mensaje de paz final */}
         <div className="mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">

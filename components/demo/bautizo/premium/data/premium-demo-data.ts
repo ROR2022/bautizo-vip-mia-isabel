@@ -128,7 +128,13 @@ export const premiumDemoData = {
       year: "2024",
       name: "BAUTISMO DE SOFIA VALENTINA",
       occasion: "15 de Septiembre 2024",
-      blessing: "\"Porque de los tales es el Reino de los Cielos\" - Mateo 19:14"
+      blessing: "\"Porque de los tales es el Reino de los Cielos\" - Mateo 19:14",
+      cta: {
+        question: "¿TIENES UN EVENTO EN PUERTA?",
+        action: "DISEÑA CON NOSOTROS TU INVITACIÓN WEB DIGITAL.",
+        linkText: "AQUÍ",
+        link: "https://www.invitacionesweb.lat/"
+      }
     }
   },
   
